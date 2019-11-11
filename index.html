@@ -14,10 +14,11 @@
 <div class="container"> 
     
 <!-- Logo and Name-->
-<header>
+<header>   
 <h1>Von Braun Astronomical Society</h1>    
 </header>     
     
+<<<<<<< Updated upstream
 <!-- Nav Bar -->  
 <nav>
       <ul>
@@ -29,6 +30,69 @@
         <li><a href="contact.html">CONTACT</a></li>
       </ul> 
 </nav>        
+=======
+<!-- Nav Bar -->   
+<div id="navbar">
+  <a href="#home">HOME</a>
+    
+    <div id="dropdown">
+    <button id="dropbtn">ABOUT
+      <i id="fa fa-caret-down"></i>
+    </button>
+    <div id="dropdown-content">
+      <a href="history.html">HISTORY</a>
+      <a href="people.html">BOARD</a>
+    </div>
+  </div> 
+    
+  <div id="dropdown">
+    <button id="dropbtn">FACILITIES
+      <i id="fa fa-caret-down"></i>
+    </button>
+    <div id="dropdown-content">
+      <a href="library.html">LIBRARY</a>
+      <a href="observatories.html">OBSERVATORY</a>
+      <a href="planetarium.html">PLANETARIUM</a>
+    </div>
+  </div> 
+    
+   <div id="dropdown">
+    <button id="dropbtn">MEMBER RESOURCES
+      <i id="fa fa-caret-down"></i>
+    </button>
+    <div id="dropdown-content">
+      <a href="resources.html">LINKS</a>
+      <a href="bylaws.html">BYLAWS</a>
+      <a href="ftp.html">FTP</a>
+      <a href="ephemeris.html">NERD</a>
+    </div>
+  </div>     
+
+ <a href="events.html">EVENTS</a>
+    
+    <div id="dropdown">
+    <button id="dropbtn">INFORMATION
+      <i id="fa fa-caret-down"></i>
+    </button>
+    <div id="dropdown-content">
+      <a href="resources.html">LINKS</a>
+      <a href="ephemeris.html">NERD INFO</a>
+      <a href="archives.html">ARCHIVES</a>
+    </div>
+  </div>   
+    
+  <div id="dropdown">
+    <button id="dropbtn">CONTACT
+      <i id="fa fa-caret-down"></i>
+    </button>
+    <div id="dropdown-content">
+      <a href="shop.html">SHOP</a>
+    </div>
+  </div>
+    
+</div>        
+    
+>>>>>>> Stashed changes
     
 <!-- IMAGE SLIDESHOW -->
 <section class="hero" id="hero">
@@ -114,12 +178,12 @@
 <!-- END OF SLIDESHOW CODE -->     
 </section>
     
+    
 <!-- Mission Statement -->
 <section class="about" id="about">
     <h2 class="hidden">About</h2>
     <p class="text_column">VBAS is a non-profit volunteer organization of amateur and professional astronomers.  In addition to operating our planetarium and observatories located in Monte Sano State Park just east of Huntsville, Alabama, we also conduct side walk astronomy events in conjunction with several local community events such as "Concerts In The Park".</p>
 </section>
-	
     
     
 <!-- Pic of Day / Newsletter / Calendar -->  
@@ -145,19 +209,52 @@
     <p class="parallax_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
   </section>
     
+
     
-    
+<<<<<<< Updated upstream
 <!-- SPONSORS AND GOOGLE MAP -->
   <section class="footer_banner" id="contact">
     <h2 class="hidden">Footer Banner Section </h2>
     <p class="hero_header">FOR THE LATEST NEWS &amp; UPDATES</p>
     <div class="button">subscribe</div>
   </section>
+=======
+<!-- SPONSORS/SOCIAL MEDIA/GOOGLE MAP -->
+<div class="grid-container">
+    
+  <div class="item1"><img id="gridimg" src="images/LM-logo.png" alt="Lockheed Martin"></div>
+    
+  <div class="item2">Social Media Icons</div>
+    
+  <div class="item3"><h4>Planterium</h4>
+    <p>5105 Nolen Ave SE <br>Huntsville, AL 35801</p>  </div>  
+    
+  <div class="item4"><img id="gridimg" src="images/GigaParts_logo.png" alt="Giga Parts"></div>
+    
+  <div class="item5">CONTACT</div>
+    
+  <div class="item6"> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6859.133595065252!2d-86.51807256582299!3d34.74353319039971!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8862143c56506e63%3A0x8df2cbf6321abe7f!2sWernher%20von%20Braun%20Planetarium!5e0!3m2!1sen!2sus!4v1571076206347!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>  </div>
+</div>      
+>>>>>>> Stashed changes
     
 <!-- COPYRIGHT SECTION -->
   <div class="copyright">&copy;2020 - <strong>Von Braun Astronomical Society</strong></div>
 </div>
     
 <!-- Main Container Ends -->
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>    
 </body>
 </html>
