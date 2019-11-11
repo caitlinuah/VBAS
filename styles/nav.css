@@ -1,8 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
 !* {
 	outline: 2px solid red;
 }
@@ -15,9 +13,7 @@ nav {
 nav ul {
 	float: right;
     list-style-type: none;
-=======
-=======
->>>>>>> Stashed changes
+
 #navbar {
     text-align: center;
     float: right;
@@ -53,22 +49,17 @@ nav ul {
     padding: 14px 16px;
     background-color: inherit;
     font-family: inherit;
->>>>>>> Stashed changes
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #381223;
 }
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
 nav ul li {
 	float: left;
 	list-style: none;
 	position: relative;
-=======
-=======
->>>>>>> Stashed changes
+
 #navbar a:hover, #dropdown:hover #dropbtn {
     background-color: #5F1536;
 }
@@ -76,7 +67,6 @@ nav ul li {
 #dropdown-content {
     display: none;
     position: absolute;
->>>>>>> Stashed changes
     background-color: #381223;
 	color: white;
 	font-family: 'Roboto', sans-serif;
@@ -93,8 +83,6 @@ nav ul li a {
     text-align: center;
 }
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
 nav ul li a:hover {
 	background-color: #5F1536;
 	color: gray;
@@ -116,9 +104,7 @@ nav ul li:hover ul {
 
 nav ul li ul li {
 	text-align: center;
-=======
-=======
->>>>>>> Stashed changes
+    
 #dropdown-content a {
     float: none;
     color: white;
@@ -144,8 +130,4 @@ nav ul li ul li {
 
 .sticky + .content {
   padding-top: 60px;
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 }
