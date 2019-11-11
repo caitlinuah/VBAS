@@ -2,6 +2,7 @@
 /* CSS Document */
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 !* {
 	outline: 2px solid red;
 }
@@ -15,6 +16,8 @@ nav ul {
 	float: right;
     list-style-type: none;
 =======
+=======
+>>>>>>> Stashed changes
 #navbar {
     text-align: center;
     float: right;
@@ -58,11 +61,14 @@ nav ul {
 }
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 nav ul li {
 	float: left;
 	list-style: none;
 	position: relative;
 =======
+=======
+>>>>>>> Stashed changes
 #navbar a:hover, #dropdown:hover #dropbtn {
     background-color: #5F1536;
 }
@@ -88,6 +94,7 @@ nav ul li a {
 }
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 nav ul li a:hover {
 	background-color: #5F1536;
 	color: gray;
@@ -110,6 +117,8 @@ nav ul li:hover ul {
 nav ul li ul li {
 	text-align: center;
 =======
+=======
+>>>>>>> Stashed changes
 #dropdown-content a {
     float: none;
     color: white;
@@ -135,5 +144,8 @@ nav ul li ul li {
 
 .sticky + .content {
   padding-top: 60px;
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 }
