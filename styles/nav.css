@@ -1,6 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 
+<<<<<<< HEAD
 !* {
 	outline: 2px solid red;
 }
@@ -15,17 +16,28 @@ nav ul {
     list-style-type: none;
 
 #navbar {
+=======
+.navbar {
+>>>>>>> master
     text-align: center;
     float: right;
     overflow: hidden;
     background-color: #381223;
     font-family: 'Roboto', serif;
+<<<<<<< HEAD
+=======
+    letter-spacing: 3px;
+>>>>>>> master
     z-index: 9;
     width: 100%;
     margin-bottom: 1.5em;
 }
 
+<<<<<<< HEAD
 #navbar a {
+=======
+.navbar a {
+>>>>>>> master
     float: left;
     font-size: 16px;
     color: white;
@@ -36,12 +48,20 @@ nav ul {
 
 
 /* Nav Dropdown Links */
+<<<<<<< HEAD
 #dropdown {
+=======
+.dropdown {
+>>>>>>> master
     float: left;
     overflow: hidden;
 }
 
+<<<<<<< HEAD
 #dropdown #dropbtn {
+=======
+.dropdown .dropbtn {
+>>>>>>> master
     font-size: 16px;  
     border: none;
     outline: none;
@@ -50,6 +70,7 @@ nav ul {
     background-color: inherit;
     font-family: inherit;
     margin: 0;
+<<<<<<< HEAD
     padding: 0;
     overflow: hidden;
     background-color: #381223;
@@ -106,6 +127,24 @@ nav ul li ul li {
 	text-align: center;
     
 #dropdown-content a {
+=======
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #5F1536;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #381223;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+>>>>>>> master
     float: none;
     color: white;
     padding: 12px 16px;
@@ -114,6 +153,7 @@ nav ul li ul li {
     text-align: left;
 }
 
+<<<<<<< HEAD
 #dropdown-content a:hover {
     background-color: #5F1536;
 }
@@ -131,3 +171,13 @@ nav ul li ul li {
 .sticky + .content {
   padding-top: 60px;
 }
+=======
+.dropdown-content a:hover {
+    background-color: #5F1536;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+>>>>>>> master
