@@ -1,0 +1,9 @@
+/* add this under header <link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet"> AND <link rel="stylesheet" href="styles/master.css"> */
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Staatliches', cursive;
+}
+
+body {
+    font-family: helvetica, regular;
+}
