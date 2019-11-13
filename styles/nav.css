@@ -8,7 +8,7 @@
 nav ul {
 	float: right;
     list-style-type: none;
-
+}
 #navbar {
     text-align: center;
     float: right;
@@ -54,7 +54,7 @@ nav ul li {
 	float: left;
 	list-style: none;
 	position: relative;
-
+}
 #navbar a:hover, #dropdown:hover #dropbtn {
     background-color: #5F1536;
 }
@@ -99,7 +99,7 @@ nav ul li:hover ul {
 
 nav ul li ul li {
 	text-align: center;
-    
+}
 #dropdown-content a {
     float: none;
     color: white;

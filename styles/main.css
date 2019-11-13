@@ -97,8 +97,8 @@ html {
       font-size: 11pt; } }
 
 body {
-  background-color: #ffffff;
-  color: #444444; }
+  background-color: black;
+  color: lightgray; }
 
 body, input, select, textarea {
   font-family: "Raleway", Arial, Helvetica, sans-serif;
@@ -1033,7 +1033,7 @@ ul.actions {
           ul.actions:not(.fixed) li .button.icon:before {
             margin-left: -0.5rem; } }
 
-/* Grid */
+/* Grid This is what makes the webpage responsive. DON'T TOUCH IT UNLESS YOU WANT TO HATE YOUR LIFE */
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -1718,6 +1718,7 @@ ul.actions {
       margin-top: -2.5rem; }
       .row.gtr-200.gtr-uniform > * {
         padding-top: 2.5rem; } }
+
 /* Icon */
 .icon {
   text-decoration: none;
@@ -2062,7 +2063,7 @@ ul.icons {
   background-color: #ce1b28;
   color: rgba(255, 255, 255, 0.75);
   background-attachment: fixed;
-  background-image: linear-gradient(rgba(23, 25, 110, 0.90), rgba(23, 25, 110, 0.5)), url(../images/pleiades.jpg);
+  background-image: linear-gradient(rgba(23, 25, 110, 0.90), rgba(23, 25, 110, 0.5)), url(../images/galaxy.jpg);
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2393,7 +2394,7 @@ body {
   padding-top: 3.25rem; }
   body:before {
     content: ' ';
-    background-image: url(../images/bg.jpg);
+    background-image: url(../images/telescope.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -2404,7 +2405,7 @@ body {
     width: 100%;
     height: 100%;
     z-index: -1;
-    opacity: 0.05; }
+    opacity: 0.15; }
 
 #header {
   -moz-align-items: center;
@@ -2500,7 +2501,7 @@ body {
   -webkit-justify-content: center;
   -ms-justify-content: center;
   justify-content: center;
-  background-image: linear-gradient(rgba(17, 17, 17, 0.25), rgba(17, 17, 17, 0.25)), url("../../images/banner.jpg");
+  background-image: linear-gradient(rgba(17, 17, 17, 0.25), rgba(17, 17, 17, 0.25)), url("../images/banner.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
