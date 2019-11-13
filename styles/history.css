@@ -1,21 +1,10 @@
 @charset "utf-8";
 /* CSS Document */
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-p {
-	color: white;
-}
-
-dt {
-	color: white;
-=======
-=======
 body {
 	background-color: black;
 }
 
->>>>>>> Stashed changes
 p, dt, dd, li {
 	color: white;
 	font-family: 'Roboto', serif;
@@ -36,8 +25,4 @@ dt {
 a {
 	color: #AC01CE;
 	text-decoration: none;
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 }
