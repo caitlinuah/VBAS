@@ -1,6 +1,14 @@
 @charset "utf-8";
 /* CSS Document */
 
+!* {
+	outline: 2px solid red;
+}
+
+nav ul {
+	float: right;
+    list-style-type: none;
+}
 #navbar {
     text-align: center;
     float: right;
@@ -19,8 +27,6 @@
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-	font-weight: bold;
-	letter-spacing: 2px;
 }
 
 
@@ -31,7 +37,7 @@
 }
 
 #dropdown #dropbtn {
-    font-size: 16px;
+    font-size: 16px;  
     border: none;
     outline: none;
     color: white;
@@ -39,12 +45,16 @@
     background-color: inherit;
     font-family: inherit;
     margin: 0;
+    padding: 0;
     overflow: hidden;
     background-color: #381223;
-	font-weight: bold;
-	letter-spacing: 2px;
 }
 
+nav ul li {
+	float: left;
+	list-style: none;
+	position: relative;
+}
 #navbar a:hover, #dropdown:hover #dropbtn {
     background-color: #5F1536;
 }
@@ -60,6 +70,36 @@
 	font-weight: bold;
 }
 
+nav ul li a {
+	display: block;
+	text-decoration: none;
+	color: white;
+	padding: 14px 16px;
+    text-align: center;
+}
+
+nav ul li a:hover {
+	background-color: #5F1536;
+	color: gray;
+}
+
+	
+nav ul li ul {
+	display: none;
+	position: absolute;
+	background-color: black;
+	padding: 20px 20px;
+}
+
+nav ul li:hover ul {
+	display: block;
+	padding: 0px 0px;
+	z-index: 1;
+}
+
+nav ul li ul li {
+	text-align: center;
+}
 #dropdown-content a {
     float: none;
     color: white;

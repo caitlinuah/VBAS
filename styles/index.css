@@ -9,11 +9,7 @@
 }
 
 body {
-<<<<<<< Updated upstream
 	font-family: source-sans-pro;
-=======
-	font-family: 'Roboto', serif;
->>>>>>> Stashed changes
 	background-color: black;
 	margin-top: 0px;
 	margin-right: 0px;
@@ -31,7 +27,7 @@ body {
 }
 
 /* Header */
-h1 {
+h1 { 
     color: white;
     font-family: 'Cinzel', serif;
     text-align: center;
@@ -54,7 +50,6 @@ header {
     background-size: cover;
 }
 
-<<<<<<< Updated upstream
 
 
 /* Navigation
@@ -90,8 +85,6 @@ li a:hover {
 */
 
 
-=======
->>>>>>> Stashed changes
 /* Hero Section */
 .hero_header {
 	color: #FFFFFF;
