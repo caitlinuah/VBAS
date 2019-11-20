@@ -1,19 +1,26 @@
 @charset "utf-8";
 /* CSS Document */
 
-.navbar {
+!* {
+	outline: 2px solid red;
+}
+
+nav ul {
+	float: right;
+    list-style-type: none;
+}
+#navbar {
     text-align: center;
     float: right;
     overflow: hidden;
     background-color: #381223;
     font-family: 'Roboto', serif;
-    letter-spacing: 3px;
     z-index: 9;
     width: 100%;
     margin-bottom: 1.5em;
 }
 
-.navbar a {
+#navbar a {
     float: left;
     font-size: 16px;
     color: white;
@@ -24,12 +31,12 @@
 
 
 /* Nav Dropdown Links */
-.dropdown {
+#dropdown {
     float: left;
     overflow: hidden;
 }
 
-.dropdown .dropbtn {
+#dropdown #dropbtn {
     font-size: 16px;  
     border: none;
     outline: none;
@@ -38,22 +45,62 @@
     background-color: inherit;
     font-family: inherit;
     margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #381223;
 }
 
-.navbar a:hover, .dropdown:hover .dropbtn {
+nav ul li {
+	float: left;
+	list-style: none;
+	position: relative;
+}
+#navbar a:hover, #dropdown:hover #dropbtn {
     background-color: #5F1536;
 }
 
-.dropdown-content {
+#dropdown-content {
     display: none;
     position: absolute;
     background-color: #381223;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+	color: white;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	letter-spacing: 2px;
+	font-weight: bold;
 }
 
-.dropdown-content a {
+nav ul li a {
+	display: block;
+	text-decoration: none;
+	color: white;
+	padding: 14px 16px;
+    text-align: center;
+}
+
+nav ul li a:hover {
+	background-color: #5F1536;
+	color: gray;
+}
+
+	
+nav ul li ul {
+	display: none;
+	position: absolute;
+	background-color: black;
+	padding: 20px 20px;
+}
+
+nav ul li:hover ul {
+	display: block;
+	padding: 0px 0px;
+	z-index: 1;
+}
+
+nav ul li ul li {
+	text-align: center;
+}
+#dropdown-content a {
     float: none;
     color: white;
     padding: 12px 16px;
@@ -62,11 +109,20 @@
     text-align: left;
 }
 
-.dropdown-content a:hover {
+#dropdown-content a:hover {
     background-color: #5F1536;
 }
 
-.dropdown:hover .dropdown-content {
+#dropdown:hover #dropdown-content {
     display: block;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}

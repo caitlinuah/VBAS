@@ -1,35 +1,83 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en-US">
 <head>
-<link rel="stylesheet" href="styles/people.css">
-<link rel="stylesheet" href="styles/nav.css">
-<style>
-</style>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Von Braun Astronomical Society People</title>
+<link href="styles/index.css" rel="stylesheet" type="text/css">
+<link href="styles/nav.css" rel="stylesheet" type="text/css">
+<link href="styles/people.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Cinzel|Roboto|Staatliches%26display=swap" rel="stylesheet">
 </head>
 <body>
-	
-	<nav>
-			<ul>
-				<li><a href="index.html" class="navbutton">Home</a></li>
-				<li><a href="about.html" class="navbutton">About</a>
-					<ul>
-						<li><a href="history.html" class="navbutton">History</a></li>
-					</ul>
-				</li>
-				<li><a href="people.html" class="navbutton">People</a></li>
-				<li><a href="facilities.html" class="navbutton">Facilities</a>
-					<ul>
-						<li><a href="library.html" class="navbutton">Library</a></li>
-						<li><a href="observatories.html" class="navbutton">Observatories</a></li>
-						<li><a href="planetarium.html" class="navbutton">Planetarium</a></li>
-					</ul>
-				</li>
-				<li><a href="events.html" class="navbutton">Events</a></li>
-				<li><a href="resources.html" class="navbutton">Resources</a></li>
-				<li><a href="contact.html" class="navbutton">Contact</a></li>
-				<li><a href="members.html" class="navbutton">Members</a></li>
-				</ul>
-		</nav>
+<!-- Main Container -->
+<div class="container"> 
+    
+<!-- Logo and Name-->
+<header>
+<h1>People</h1>    
+</header>     
+    
+<!-- Nav Bar -->
+<div id="navbar">
+  <a href="#home">HOME</a>
+
+    <div id="dropdown">
+    <button id="dropbtn">ABOUT
+      <i id="fa fa-caret-down"></i>
+    </button>
+    <div id="dropdown-content">
+      <a href="history.html">HISTORY</a>
+      <a href="people.html">BOARD</a>
+    </div>
+  </div>
+  <div id="dropdown">
+    <button id="dropbtn">FACILITIES
+      <i id="fa fa-caret-down"></i>
+    </button>
+    <div id="dropdown-content">
+      <a href="library.html">LIBRARY</a>
+      <a href="observatories.html">OBSERVATORY</a>
+      <a href="planetarium.html">PLANETARIUM</a>
+    </div>
+  </div>
+
+   <div id="dropdown">
+    <button id="dropbtn">MEMBER RESOURCES
+      <i id="fa fa-caret-down"></i>
+    </button>
+    <div id="dropdown-content">
+      <a href="resources.html">LINKS</a>
+      <a href="bylaws.html">BYLAWS</a>
+      <a href="ftp.html">FTP</a>
+      <a href="ephemeris.html">NERD</a>
+    </div>
+  </div>
+
+ <a href="events.html">EVENTS</a>
+
+    <div id="dropdown">
+    <button id="dropbtn">INFORMATION
+      <i id="fa fa-caret-down"></i>
+    </button>
+    <div id="dropdown-content">
+      <a href="resources.html">LINKS</a>
+      <a href="ephemeris.html">NERD INFO</a>
+      <a href="archives.html">ARCHIVES</a>
+    </div>
+  </div>  
+
+  <div id="dropdown">
+    <button id="dropbtn">CONTACT
+      <i id="fa fa-caret-down"></i>
+    </button>
+    <div id="dropdown-content">
+      <a href="shop.html">SHOP</a>
+    </div>
+  </div>
+
+</div>
 
 <h2 style="text-align:center">VBAS Elected Board of Directors</h2>
 
@@ -317,11 +365,325 @@
 function openForm() {
   document.getElementById("myForm").style.display = "block";
 }
-
 function closeForm() {
   document.getElementById("myForm").style.display = "none";
 }
 </script>
     
+</body>
+</html>
+<!--&lt;h2 style=&quot;text-align:center&quot;&gt;VBAS Elected Board of Directors&lt;/h2&gt;<br />
+<br />
+&lt;div class=&quot;card&quot;&gt;<br />
+&nbsp; &lt;img src=&quot;/w3images/team2.jpg&quot; alt=&quot;John&quot; style=&quot;width:100%&quot;&gt;<br />
+&nbsp; &lt;h1&gt;Beth Bero&lt;/h1&gt;<br />
+&nbsp; &lt;p class=&quot;title&quot;&gt;President 2019-2020&lt;/p&gt;<br />
+&nbsp; &lt;div style=&quot;margin: 24px 0;&quot;&gt;<br />
+&nbsp; &nbsp; &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-dribbble&quot;&gt;&lt;/i&gt;&lt;/a&gt;&nbsp;<br />
+&nbsp; &nbsp; &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-twitter&quot;&gt;&lt;/i&gt;&lt;/a&gt; &nbsp;<br />
+&nbsp; &nbsp; &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-linkedin&quot;&gt;&lt;/i&gt;&lt;/a&gt; &nbsp;<br />
+&nbsp; &nbsp; &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-facebook&quot;&gt;&lt;/i&gt;&lt;/a&gt;&nbsp;<br />
+&nbsp; &lt;/div&gt;<br />
+&nbsp; &lt;p&gt;&lt;button&gt;Contact&lt;/button&gt;&lt;/<wbr />p&gt;<br />
+&lt;/div&gt;<br />
+<br />
+&lt;div class=&quot;card&quot;&gt;<br />
+&nbsp; &lt;img src=&quot;/w3images/team2.jpg&quot; alt=&quot;John&quot; style=&quot;width:100%&quot;&gt;<br />
+&nbsp; &lt;h1&gt;Don Martin&lt;/h1&gt;<br />
+&nbsp; &lt;p class=&quot;title&quot;&gt;Secretary 2018-2021, Newsletter Editor&lt;/p&gt;<br />
+&nbsp; &lt;div style=&quot;margin: 24px 0;&quot;&gt;<br />
+&nbsp; &nbsp; &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-dribbble&quot;&gt;&lt;/i&gt;&lt;/a&gt;&nbsp;<br />
+&nbsp; &nbsp; &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-twitter&quot;&gt;&lt;/i&gt;&lt;/a&gt; &nbsp;<br />
+&nbsp; &nbsp; &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-linkedin&quot;&gt;&lt;/i&gt;&lt;/a&gt; &nbsp;<br />
+&nbsp; &nbsp; &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-facebook&quot;&gt;&lt;/i&gt;&lt;/a&gt;&nbsp;<br />
+&nbsp; &lt;/div&gt;<br />
+&nbsp; &lt;p&gt;&lt;button&gt;Contact&lt;/button&gt;&lt;/<wbr />p&gt;<br />
+&lt;/div&gt; &nbsp; &nbsp;<br />
+<br />
+&lt;div class=&quot;card&quot;&gt;<br />
+&nbsp; &lt;img src=&quot;/w3images/team2.jpg&quot; alt=&quot;John&quot; style=&quot;width:100%&quot;&gt;<br />
+&nbsp; &lt;h1&gt;Eric Silkowski&lt;/h1&gt;<br />
+&nbsp; &lt;p class=&quot;title&quot;&gt;Treasurer 2019-2021&lt;/p&gt;<br />
+&nbsp; &lt;div style=&quot;margin: 24px 0;&quot;&gt;<br />
+&nbsp; &nbsp; &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-dribbble&quot;&gt;&lt;/i&gt;&lt;/a&gt;&nbsp;<br />
+&nbsp; &nbsp; &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-twitter&quot;&gt;&lt;/i&gt;&lt;/a&gt; &nbsp;<br />
+&nbsp; &nbsp; &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-linkedin&quot;&gt;&lt;/i&gt;&lt;/a&gt; &nbsp;<br />
+&nbsp; &nbsp; &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-facebook&quot;&gt;&lt;/i&gt;&lt;/a&gt;&nbsp;<br />
+&nbsp; &lt;/div&gt;<br />
+&nbsp; &lt;p&gt;&lt;button&gt;Contact&lt;/button&gt;&lt;/<wbr />p&gt;<br />
+&lt;/div&gt; &nbsp; &nbsp;<br />
+<br />
+&lt;div class=&quot;card&quot;&gt;<br />
+&nbsp; &lt;img src=&quot;/w3images/team2.jpg&quot; alt=&quot;John&quot; style=&quot;width:100%&quot;&gt;<br />
+&nbsp; &lt;h1&gt;Nick Schragal&lt;/h1&gt;<br />
+&nbsp; &lt;p class=&quot;title&quot;&gt;Student Director 2019-2020&lt;/p&gt;<br />
+&nbsp; &lt;div style=&quot;margin: 24px 0;&quot;&gt;<br />
+&nbsp; &nbsp; &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-dribbble&quot;&gt;&lt;/i&gt;&lt;/a&gt;&nbsp;<br />
+&nbsp; &nbsp; &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-twitter&quot;&gt;&lt;/i&gt;&lt;/a&gt; &nbsp;<br />
+&nbsp; &nbsp; &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-linkedin&quot;&gt;&lt;/i&gt;&lt;/a&gt; &nbsp;<br />
+&nbsp; &nbsp; &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-facebook&quot;&gt;&lt;/i&gt;&lt;/a&gt;&nbsp;<br />
+&nbsp; &lt;/div&gt;<br />
+&nbsp; &lt;p&gt;&lt;button&gt;Contact&lt;/button&gt;&lt;/<wbr />p&gt;<br />
+&lt;/div&gt; &nbsp; &nbsp;<br />
+<br />
+&lt;div class=&quot;card&quot;&gt;<br />
+&nbsp; &lt;img src=&quot;/w3images/team2.jpg&quot; alt=&quot;John&quot; style=&quot;width:100%&quot;&gt;<br />
+&nbsp; &lt;h1&gt;Neil Boyd&lt;/h1&gt;<br />
+&nbsp; &lt;p class=&quot;title&quot;&gt;Director of Administration 2018-2020&lt;/p&gt;<br />
+&nbsp; &lt;div style=&quot;margin: 24px 0;&quot;&gt;<br />
+&nbsp; &nbsp; &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-dribbble&quot;&gt;&lt;/i&gt;&lt;/a&gt;&nbsp;<br />
+&nbsp; &nbsp; &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-twitter&quot;&gt;&lt;/i&gt;&lt;/a&gt; &nbsp;<br />
+&nbsp; &nbsp; &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-linkedin&quot;&gt;&lt;/i&gt;&lt;/a&gt; &nbsp;<br />
+&nbsp; &nbsp; &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-facebook&quot;&gt;&lt;/i&gt;&lt;/a&gt;&nbsp;<br />
+&nbsp; &lt;/div&gt;<br />
+&nbsp; &lt;p&gt;&lt;button&gt;Contact&lt;/button&gt;&lt;/<wbr />p&gt;<br />
+&lt;/div&gt; &nbsp; &nbsp;<br />
+<br />
+&lt;div class=&quot;card&quot;&gt;<br />
+&nbsp; &lt;img src=&quot;/w3images/team2.jpg&quot; alt=&quot;John&quot; style=&quot;width:100%&quot;&gt;<br />
+&nbsp; &lt;h1&gt;Gena Crook&lt;/h1&gt;<br />
+&nbsp; &lt;p class=&quot;title&quot;&gt;Director of Education &amp; Programs 2019-2021&lt;/p&gt;<br />
+&nbsp; &lt;div style=&quot;margin: 24px 0;&quot;&gt;<br />
+&nbsp; &nbsp; &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-dribbble&quot;&gt;&lt;/i&gt;&lt;/a&gt;&nbsp;<br />
+&nbsp; &nbsp; &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-twitter&quot;&gt;&lt;/i&gt;&lt;/a&gt; &nbsp;<br />
+&nbsp; &nbsp; &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-linkedin&quot;&gt;&lt;/i&gt;&lt;/a&gt; &nbsp;<br />
+&nbsp; &nbsp; &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-facebook&quot;&gt;&lt;/i&gt;&lt;/a&gt;&nbsp;<br />
+&nbsp; &lt;/div&gt;<br />
+&nbsp; &lt;p&gt;&lt;button&gt;Contact&lt;/button&gt;&lt;/<wbr />p&gt;<br />
+&lt;/div&gt; &nbsp; &nbsp;<br />
+<br />
+&lt;div class=&quot;card&quot;&gt;<br />
+&nbsp; &lt;img src=&quot;/w3images/team2.jpg&quot; alt=&quot;John&quot; style=&quot;width:100%&quot;&gt;<br />
+&nbsp; &lt;h1&gt;Frank Schenck&lt;/h1&gt;<br />
+&nbsp; &lt;p class=&quot;title&quot;&gt;Director of Facilities &amp; Equipment 2019-2021&lt;/p&gt;<br />
+&nbsp; &lt;div style=&quot;margin: 24px 0;&quot;&gt;<br />
+&nbsp; &nbsp; &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-dribbble&quot;&gt;&lt;/i&gt;&lt;/a&gt;&nbsp;<br />
+&nbsp; &nbsp; &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-twitter&quot;&gt;&lt;/i&gt;&lt;/a&gt; &nbsp;<br />
+&nbsp; &nbsp; &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-linkedin&quot;&gt;&lt;/i&gt;&lt;/a&gt; &nbsp;<br />
+&nbsp; &nbsp; &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-facebook&quot;&gt;&lt;/i&gt;&lt;/a&gt;&nbsp;<br />
+&nbsp; &lt;/div&gt;<br />
+&nbsp; &lt;p&gt;&lt;button&gt;Contact&lt;/button&gt;&lt;/<wbr />p&gt;<br />
+&lt;/div&gt; &nbsp; &nbsp;<br />
+<br />
+&lt;div class=&quot;card&quot;&gt;<br />
+&nbsp; &lt;img src=&quot;/w3images/team2.jpg&quot; alt=&quot;John&quot; style=&quot;width:100%&quot;&gt;<br />
+&nbsp; &lt;h1&gt;Richard Norman&lt;/h1&gt;<br />
+&nbsp; &lt;p class=&quot;title&quot;&gt;Director of Planning &amp; Research 2018-2020, Membership Secretary, Dark Skies Rep.&lt;/p&gt;<br />
+&nbsp; &lt;div style=&quot;margin: 24px 0;&quot;&gt;<br />
+&nbsp; &nbsp; &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-dribbble&quot;&gt;&lt;/i&gt;&lt;/a&gt;&nbsp;<br />
+&nbsp; &nbsp; &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-twitter&quot;&gt;&lt;/i&gt;&lt;/a&gt; &nbsp;<br />
+&nbsp; &nbsp; &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-linkedin&quot;&gt;&lt;/i&gt;&lt;/a&gt; &nbsp;<br />
+&nbsp; &nbsp; &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-facebook&quot;&gt;&lt;/i&gt;&lt;/a&gt;&nbsp;<br />
+&nbsp; &lt;/div&gt;<br />
+&nbsp; &lt;p&gt;&lt;button&gt;Contact&lt;/button&gt;&lt;/<wbr />p&gt;<br />
+&lt;/div&gt; &nbsp; &nbsp;<br />
+<br />
+&lt;div class=&quot;card&quot;&gt;<br />
+&nbsp; &lt;img src=&quot;/w3images/team2.jpg&quot; alt=&quot;John&quot; style=&quot;width:100%&quot;&gt;<br />
+&nbsp; &lt;h1&gt;Don Reed&lt;/h1&gt;<br />
+&nbsp; &lt;p class=&quot;title&quot;&gt;Past President 2019-2020&lt;/p&gt;<br />
+&nbsp; &lt;div style=&quot;margin: 24px 0;&quot;&gt;<br />
+&nbsp; &nbsp; &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-dribbble&quot;&gt;&lt;/i&gt;&lt;/a&gt;&nbsp;<br />
+&nbsp; &nbsp; &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-twitter&quot;&gt;&lt;/i&gt;&lt;/a&gt; &nbsp;<br />
+&nbsp; &nbsp; &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-linkedin&quot;&gt;&lt;/i&gt;&lt;/a&gt; &nbsp;<br />
+&nbsp; &nbsp; &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-facebook&quot;&gt;&lt;/i&gt;&lt;/a&gt;&nbsp;<br />
+&nbsp; &lt;/div&gt;<br />
+&nbsp; &lt;p&gt;&lt;button&gt;Contact&lt;/button&gt;&lt;/<wbr />p&gt;<br />
+&lt;/div&gt; &nbsp; &nbsp;<br />
+<br />
+&lt;h2 style=&quot;text-align:center&quot;&gt;<wbr />Appointed Officers&lt;/h2&gt; &nbsp; &nbsp;<br />
+&nbsp; &nbsp;&nbsp;<br />
+&lt;div class=&quot;card&quot;&gt;<br />
+&nbsp; &lt;img src=&quot;/w3images/team2.jpg&quot; alt=&quot;John&quot; style=&quot;width:100%&quot;&gt;<br />
+&nbsp; &lt;h1&gt;Jared Cassidy&lt;/h1&gt;<br />
+&nbsp; &lt;p class=&quot;title&quot;&gt;Planetarium Director&lt;/p&gt;<br />
+&nbsp; &lt;div style=&quot;margin: 24px 0;&quot;&gt;<br />
+&nbsp; &nbsp; &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-dribbble&quot;&gt;&lt;/i&gt;&lt;/a&gt;&nbsp;<br />
+&nbsp; &nbsp; &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-twitter&quot;&gt;&lt;/i&gt;&lt;/a&gt; &nbsp;<br />
+&nbsp; &nbsp; &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-linkedin&quot;&gt;&lt;/i&gt;&lt;/a&gt; &nbsp;<br />
+&nbsp; &nbsp; &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-facebook&quot;&gt;&lt;/i&gt;&lt;/a&gt;&nbsp;<br />
+&nbsp; &lt;/div&gt;<br />
+&nbsp; &lt;p&gt;&lt;button&gt;Contact&lt;/button&gt;&lt;/<wbr />p&gt;<br />
+&lt;/div&gt; &nbsp; &nbsp;<br />
+<br />
+&lt;div class=&quot;card&quot;&gt;<br />
+&nbsp; &lt;img src=&quot;/w3images/team2.jpg&quot; alt=&quot;John&quot; style=&quot;width:100%&quot;&gt;<br />
+&nbsp; &lt;h1&gt;Jeff Delmas&lt;/h1&gt;<br />
+&nbsp; &lt;p class=&quot;title&quot;&gt;Observatories Director&lt;/p&gt;<br />
+&nbsp; &lt;div style=&quot;margin: 24px 0;&quot;&gt;<br />
+&nbsp; &nbsp; &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-dribbble&quot;&gt;&lt;/i&gt;&lt;/a&gt;&nbsp;<br />
+&nbsp; &nbsp; &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-twitter&quot;&gt;&lt;/i&gt;&lt;/a&gt; &nbsp;<br />
+&nbsp; &nbsp; &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-linkedin&quot;&gt;&lt;/i&gt;&lt;/a&gt; &nbsp;<br />
+&nbsp; &nbsp; &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-facebook&quot;&gt;&lt;/i&gt;&lt;/a&gt;&nbsp;<br />
+&nbsp; &lt;/div&gt;<br />
+&nbsp; &lt;p&gt;&lt;button&gt;Contact&lt;/button&gt;&lt;/<wbr />p&gt;<br />
+&lt;/div&gt; &nbsp; &nbsp;<br />
+<br />
+&lt;div class=&quot;card&quot;&gt;<br />
+&nbsp; &lt;img src=&quot;/w3images/team2.jpg&quot; alt=&quot;John&quot; style=&quot;width:100%&quot;&gt;<br />
+&nbsp; &lt;h1&gt;Michael Buford&lt;/h1&gt;<br />
+&nbsp; &lt;p class=&quot;title&quot;&gt;Public Communications Coordinator&lt;/p&gt;<br />
+&nbsp; &lt;div style=&quot;margin: 24px 0;&quot;&gt;<br />
+&nbsp; &nbsp; &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-dribbble&quot;&gt;&lt;/i&gt;&lt;/a&gt;&nbsp;<br />
+&nbsp; &nbsp; &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-twitter&quot;&gt;&lt;/i&gt;&lt;/a&gt; &nbsp;<br />
+&nbsp; &nbsp; &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-linkedin&quot;&gt;&lt;/i&gt;&lt;/a&gt; &nbsp;<br />
+&nbsp; &nbsp; &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-facebook&quot;&gt;&lt;/i&gt;&lt;/a&gt;&nbsp;<br />
+&nbsp; &lt;/div&gt;<br />
+&nbsp; &lt;p&gt;&lt;button&gt;Contact&lt;/button&gt;&lt;/<wbr />p&gt;<br />
+&lt;/div&gt; &nbsp; &nbsp;<br />
+<br />
+&lt;div class=&quot;card&quot;&gt;<br />
+&nbsp; &lt;img src=&quot;/w3images/team2.jpg&quot; alt=&quot;John&quot; style=&quot;width:100%&quot;&gt;<br />
+&nbsp; &lt;h1&gt;Naveen Vetcha&lt;/h1&gt;<br />
+&nbsp; &lt;p class=&quot;title&quot;&gt;Outreach Coordinator&lt;/p&gt;<br />
+&nbsp; &lt;div style=&quot;margin: 24px 0;&quot;&gt;<br />
+&nbsp; &nbsp; &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-dribbble&quot;&gt;&lt;/i&gt;&lt;/a&gt;&nbsp;<br />
+&nbsp; &nbsp; &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-twitter&quot;&gt;&lt;/i&gt;&lt;/a&gt; &nbsp;<br />
+&nbsp; &nbsp; &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-linkedin&quot;&gt;&lt;/i&gt;&lt;/a&gt; &nbsp;<br />
+&nbsp; &nbsp; &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-facebook&quot;&gt;&lt;/i&gt;&lt;/a&gt;&nbsp;<br />
+&nbsp; &lt;/div&gt;<br />
+&nbsp; &lt;p&gt;&lt;button&gt;Contact&lt;/button&gt;&lt;/<wbr />p&gt;<br />
+&lt;/div&gt; &nbsp; &nbsp;<br />
+<br />
+&lt;div class=&quot;card&quot;&gt;<br />
+&nbsp; &lt;img src=&quot;/w3images/team2.jpg&quot; alt=&quot;John&quot; style=&quot;width:100%&quot;&gt;<br />
+&nbsp; &lt;h1&gt;Amanda Campbell&lt;/h1&gt;<br />
+&nbsp; &lt;p class=&quot;title&quot;&gt;Librarian, Historian&lt;/p&gt;<br />
+&nbsp; &lt;div style=&quot;margin: 24px 0;&quot;&gt;<br />
+&nbsp; &nbsp; &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-dribbble&quot;&gt;&lt;/i&gt;&lt;/a&gt;&nbsp;<br />
+&nbsp; &nbsp; &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-twitter&quot;&gt;&lt;/i&gt;&lt;/a&gt; &nbsp;<br />
+&nbsp; &nbsp; &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-linkedin&quot;&gt;&lt;/i&gt;&lt;/a&gt; &nbsp;<br />
+&nbsp; &nbsp; &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-facebook&quot;&gt;&lt;/i&gt;&lt;/a&gt;&nbsp;<br />
+&nbsp; &lt;/div&gt;<br />
+&nbsp; &lt;p&gt;&lt;button&gt;Contact&lt;/button&gt;&lt;/<wbr />p&gt;<br />
+&lt;/div&gt; &nbsp; &nbsp;<br />
+<br />
+&lt;div class=&quot;card&quot;&gt;<br />
+&nbsp; &lt;img src=&quot;/w3images/team2.jpg&quot; alt=&quot;John&quot; style=&quot;width:100%&quot;&gt;<br />
+&nbsp; &lt;h1&gt;Jeff Bennett&lt;/h1&gt;<br />
+&nbsp; &lt;p class=&quot;title&quot;&gt;Librarian, Historian&lt;/p&gt;<br />
+&nbsp; &lt;div style=&quot;margin: 24px 0;&quot;&gt;<br />
+&nbsp; &nbsp; &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-dribbble&quot;&gt;&lt;/i&gt;&lt;/a&gt;&nbsp;<br />
+&nbsp; &nbsp; &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-twitter&quot;&gt;&lt;/i&gt;&lt;/<br />
+&nbsp; &nbsp; &nbsp; &nbsp; .a0&gt; &nbsp;<br />
+&nbsp; &nbsp; &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-linkedin&quot;&gt;&lt;/i&gt;&lt;/a&gt; &nbsp;<br />
+&nbsp; &nbsp; &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-facebook&quot;&gt;&lt;/i&gt;&lt;/a&gt;&nbsp;<br />
+&nbsp; &lt;/div&gt;<br />
+&nbsp; &lt;p&gt;&lt;button&gt;Contact&lt;/button&gt;&lt;/<wbr />p&gt;<br />
+&lt;/div&gt; &nbsp; &nbsp;<br />
+<br />
+&lt;h2 style=&quot;text-align:center&quot;&gt;<wbr />Website Team&lt;/h2&gt; &nbsp; &nbsp;<br />
+&nbsp; &nbsp;&nbsp;<br />
+&lt;div class=&quot;card&quot;&gt;<br />
+&nbsp; &lt;img src=&quot;/w3images/team2.jpg&quot; alt=&quot;John&quot; style=&quot;width:100%&quot;&gt;<br />
+&nbsp; &lt;h1&gt;Chris Bero&lt;/h1&gt;<br />
+&nbsp; &lt;p class=&quot;title&quot;&gt;Webmaster&lt;/p&gt;<br />
+&nbsp; &lt;div style=&quot;margin: 24px 0;&quot;&gt;<br />
+&nbsp; &nbsp; &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-dribbble&quot;&gt;&lt;/i&gt;&lt;/a&gt;&nbsp;<br />
+&nbsp; &nbsp; &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-twitter&quot;&gt;&lt;/i&gt;&lt;/a&gt; &nbsp;<br />
+&nbsp; &nbsp; &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-linkedin&quot;&gt;&lt;/i&gt;&lt;/a&gt; &nbsp;<br />
+&nbsp; &nbsp; &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-facebook&quot;&gt;&lt;/i&gt;&lt;/a&gt;&nbsp;<br />
+&nbsp; &lt;/div&gt;<br />
+&lt;button class=&quot;open-button&quot; onclick=&quot;openForm()&quot;&gt;Contact&lt;/<wbr />button&gt;<br />
+<br />
+&lt;div class=&quot;form-popup&quot; id=&quot;myForm&quot;&gt;<br />
+&nbsp; &lt;form action=&quot;/action_page.php&quot; class=&quot;form-container&quot;&gt;<br />
+&nbsp; &nbsp; &lt;h1&gt;Contact Info&lt;/h1&gt;<br />
+<br />
+&nbsp; &nbsp; &lt;label for=&quot;email&quot;&gt;&lt;b&gt;Email&lt;/b&gt;&lt;/<wbr />label&gt;<br />
+&nbsp; &nbsp; &lt;a href=&quot;mailto:<a href="mailto:xuelynn1@gmail.com" target="_blank">xuelynn1@gmail.<wbr />com</a>&quot;&gt;&lt;p&gt;<a href="mailto:xuelynn1@gmail.com" target="_blank">xuelynn1@gmail.com</a>&lt;/p&gt;<wbr />&lt;/a&gt;<br />
+<br />
+&nbsp; &nbsp; &lt;label for=&quot;psw&quot;&gt;&lt;b&gt;Phone&lt;/b&gt;&lt;/label&gt;<br />
+&nbsp; &nbsp; &lt;p&gt;256-533-5000&lt;/p&gt;<br />
+<br />
+&nbsp; &nbsp; &lt;button type=&quot;button&quot; class=&quot;btn cancel&quot; onclick=&quot;closeForm()&quot;&gt;Close&lt;/<wbr />button&gt;<br />
+&nbsp; &lt;/form&gt;<br />
+&lt;/div&gt;<br />
+&lt;/div&gt; &nbsp; &nbsp;<br />
+<br />
+&lt;div class=&quot;card&quot;&gt;<br />
+&nbsp; &lt;img src=&quot;/w3images/team2.jpg&quot; alt=&quot;John&quot; style=&quot;width:100%&quot;&gt;<br />
+&nbsp; &lt;h1&gt;Jared Cassidy&lt;/h1&gt;<br />
+&nbsp; &lt;p class=&quot;title&quot;&gt;Librarian, Historian&lt;/p&gt;<br />
+&nbsp; &lt;div style=&quot;margin: 24px 0;&quot;&gt;<br />
+&nbsp; &nbsp; &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-dribbble&quot;&gt;&lt;/i&gt;&lt;/a&gt;&nbsp;<br />
+&nbsp; &nbsp; &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-twitter&quot;&gt;&lt;/i&gt;&lt;/a&gt; &nbsp;<br />
+&nbsp; &nbsp; &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-linkedin&quot;&gt;&lt;/i&gt;&lt;/a&gt; &nbsp;<br />
+&nbsp; &nbsp; &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-facebook&quot;&gt;&lt;/i&gt;&lt;/a&gt;&nbsp;<br />
+&nbsp; &lt;/div&gt;<br />
+&lt;button class=&quot;open-button&quot; onclick=&quot;openForm()&quot;&gt;Contact&lt;/<wbr />button&gt;<br />
+<br />
+&lt;div class=&quot;form-popup&quot; id=&quot;myForm&quot;&gt;<br />
+&nbsp; &lt;form action=&quot;/action_page.php&quot; class=&quot;form-container&quot;&gt;<br />
+&nbsp; &nbsp; &lt;h1&gt;Contact Info&lt;/h1&gt;<br />
+<br />
+&nbsp; &nbsp; &lt;label for=&quot;email&quot;&gt;&lt;b&gt;Email&lt;/b&gt;&lt;/<wbr />label&gt;<br />
+&nbsp; &nbsp; &lt;a href=&quot;mailto:<a href="mailto:xuelynn1@gmail.com" target="_blank">xuelynn1@gmail.<wbr />com</a>&quot;&gt;&lt;p&gt;<a href="mailto:xuelynn1@gmail.com" target="_blank">xuelynn1@gmail.com</a>&lt;/p&gt;<wbr />&lt;/a&gt;<br />
+<br />
+&nbsp; &nbsp; &lt;label for=&quot;psw&quot;&gt;&lt;b&gt;Phone&lt;/b&gt;&lt;/label&gt;<br />
+&nbsp; &nbsp; &lt;p&gt;256-533-5000&lt;/p&gt;<br />
+<br />
+&nbsp; &nbsp; &lt;button type=&quot;button&quot; class=&quot;btn cancel&quot; onclick=&quot;closeForm()&quot;&gt;Close&lt;/<wbr />button&gt;<br />
+&nbsp; &lt;/form&gt;<br />
+&lt;/div&gt;<br />
+&lt;/div&gt; &nbsp; &nbsp;<br />
+<br />
+&lt;div class=&quot;card&quot;&gt;<br />
+&nbsp; &lt;img src=&quot;/w3images/team2.jpg&quot; alt=&quot;John&quot; style=&quot;width:100%&quot;&gt;<br />
+&nbsp; &lt;h1&gt;Naveen Vetcha&lt;/h1&gt;<br />
+&nbsp; &lt;p class=&quot;title&quot;&gt;Librarian, Historian&lt;/p&gt;<br />
+&nbsp; &lt;div style=&quot;margin: 24px 0;&quot;&gt;<br />
+&nbsp; &nbsp; &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-dribbble&quot;&gt;&lt;/i&gt;&lt;/a&gt;&nbsp;<br />
+&nbsp; &nbsp; &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-twitter&quot;&gt;&lt;/i&gt;&lt;/a&gt; &nbsp;<br />
+&nbsp; &nbsp; &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-linkedin&quot;&gt;&lt;/i&gt;&lt;/a&gt; &nbsp;<br />
+&nbsp; &nbsp; &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-facebook&quot;&gt;&lt;/i&gt;&lt;/a&gt;&nbsp;<br />
+&nbsp; &lt;/div&gt;<br />
+&nbsp; &lt;p&gt;&lt;button&gt;Contact&lt;/button&gt;&lt;/<wbr />p&gt;<br />
+&lt;/div&gt; &nbsp; &nbsp;<br />
+<br />
+&lt;div class=&quot;card&quot;&gt;<br />
+&nbsp; &lt;img src=&quot;/w3images/team2.jpg&quot; alt=&quot;John&quot; style=&quot;width:100%&quot;&gt;<br />
+&nbsp; &lt;h1&gt;Mimmo DeMartino&lt;/h1&gt;<br />
+&nbsp; &lt;p class=&quot;title&quot;&gt;Librarian, Historian&lt;/p&gt;<br />
+&nbsp; &lt;div style=&quot;margin: 24px 0;&quot;&gt;<br />
+&nbsp; &nbsp; &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-dribbble&quot;&gt;&lt;/i&gt;&lt;/a&gt;&nbsp;<br />
+&nbsp; &nbsp; &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-twitter&quot;&gt;&lt;/i&gt;&lt;/a&gt; &nbsp;<br />
+&nbsp; &nbsp; &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-linkedin&quot;&gt;&lt;/i&gt;&lt;/a&gt; &nbsp;<br />
+&nbsp; &nbsp; &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-facebook&quot;&gt;&lt;/i&gt;&lt;/a&gt;&nbsp;<br />
+&nbsp; &lt;/div&gt;<br />
+&nbsp; &lt;p&gt;&lt;button&gt;Contact&lt;/button&gt;&lt;/<wbr />p&gt;<br />
+&lt;/div&gt; &nbsp; &nbsp;<br />
+<br />
+&lt;script&gt;<br />
+function openForm() {<br />
+&nbsp; document.getElementById(&quot;<wbr />myForm&quot;).style.display = &quot;block&quot;;<br />
+}<br />
+<br />
+function closeForm() {<br />
+&nbsp; document.getElementById(&quot;<wbr />myForm&quot;).style.display = &quot;none&quot;;<br />
+}<br />
+&lt;/script&gt;<br />
+&nbsp; &nbsp;&nbsp;<br />
+&lt;/body&gt;<br />
+&lt;/html&gt;</p> -->
+
+<!-- DONATE LINK -->
+  <section class="banner">
+    <h2 class="parallax">JOIN NOW</h2>
+    <p class="parallax_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+  </section>
+
+<!-- SPONSORS AND GOOGLE MAP -->
+  <section class="footer_banner" id="contact">
+    <h2 class="hidden">Footer Banner Section </h2>
+    <p class="hero_header">FOR THE LATEST NEWS &amp; UPDATES</p>
+    <div class="button">subscribe</div>
+  </section>
+    
+<!-- COPYRIGHT SECTION -->
+  <div class="copyright">&copy;2020 - <strong>Von Braun Astronomical Society</strong></div>
+</div>
+    
+<!-- Main Container Ends -->
 </body>
 </html>

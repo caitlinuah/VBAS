@@ -1,38 +1,89 @@
 <!doctype html>
-<html>
+<html lang="en-US">
 <head>
-<meta charset="utf-8">
-<title>Library</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Von Braun Astronomical Society Library</title>
+<link href="styles/index.css" rel="stylesheet" type="text/css">
+<link href="styles/nav.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Cinzel|Roboto|Staatliches&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Cinzel|Roboto|Staatliches%26display=swap" rel="stylesheet">
 <style>
     #issues li {display:inline; width:auto; padding-right:10%;}
     #new img{width:200px;}
 </style>
 </head>
-<link href="styles/nav.css" rel="stylesheet" type="text/css">
 <body>
-	
-	<nav>
-			<ul>
-				<li><a href="index.html" class="navbutton">Home</a></li>
-				<li><a href="about.html" class="navbutton">About</a>
-					<ul>
-						<li><a href="history.html" class="navbutton">History</a></li>
-					</ul>
-				</li>
-				<li><a href="people.html" class="navbutton">People</a></li>
-				<li><a href="facilities.html" class="navbutton">Facilities</a>
-					<ul>
-						<li><a href="library.html" class="navbutton">Library</a></li>
-						<li><a href="observatories.html" class="navbutton">Observatories</a></li>
-						<li><a href="planetarium.html" class="navbutton">Planetarium</a></li>
-					</ul>
-				</li>
-				<li><a href="events.html" class="navbutton">Events</a></li>
-				<li><a href="resources.html" class="navbutton">Resources</a></li>
-				<li><a href="contact.html" class="navbutton">Contact</a></li>
-				<li><a href="members.html" class="navbutton">Members</a></li>
-				</ul>
-		</nav>
+
+<!-- Main Container -->
+<div class="container"> 
+    
+<!-- Logo and Name-->
+<header>
+<h1>Library</h1>    
+</header>     
+    
+<!-- Nav Bar -->
+<div id="navbar">
+  <a href="#home">HOME</a>
+
+    <div id="dropdown">
+    <button id="dropbtn">ABOUT
+      <i id="fa fa-caret-down"></i>
+    </button>
+    <div id="dropdown-content">
+      <a href="history.html">HISTORY</a>
+      <a href="people.html">BOARD</a>
+    </div>
+  </div>
+  <div id="dropdown">
+    <button id="dropbtn">FACILITIES
+      <i id="fa fa-caret-down"></i>
+    </button>
+    <div id="dropdown-content">
+      <a href="library.html">LIBRARY</a>
+      <a href="observatories.html">OBSERVATORY</a>
+      <a href="planetarium.html">PLANETARIUM</a>
+    </div>
+  </div>
+
+   <div id="dropdown">
+    <button id="dropbtn">MEMBER RESOURCES
+      <i id="fa fa-caret-down"></i>
+    </button>
+    <div id="dropdown-content">
+      <a href="resources.html">LINKS</a>
+      <a href="bylaws.html">BYLAWS</a>
+      <a href="ftp.html">FTP</a>
+      <a href="ephemeris.html">NERD</a>
+    </div>
+  </div>
+
+ <a href="events.html">EVENTS</a>
+
+    <div id="dropdown">
+    <button id="dropbtn">INFORMATION
+      <i id="fa fa-caret-down"></i>
+    </button>
+    <div id="dropdown-content">
+      <a href="resources.html">LINKS</a>
+      <a href="ephemeris.html">NERD INFO</a>
+      <a href="archives.html">ARCHIVES</a>
+    </div>
+  </div>  
+
+  <div id="dropdown">
+    <button id="dropbtn">CONTACT
+      <i id="fa fa-caret-down"></i>
+    </button>
+    <div id="dropdown-content">
+      <a href="shop.html">SHOP</a>
+    </div>
+  </div>
+
+</div>
+  
 	<main>
 	<h1>Ann Sanford Memorial Library</h1>
 <img src="#" alt="Door of the Ann Sanford Memorial Library">
@@ -234,5 +285,24 @@
             </tr>
         </table>
     </section>
+
+<!-- DONATE LINK -->
+  <section class="banner">
+    <h2 class="parallax">JOIN NOW</h2>
+    <p class="parallax_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+  </section>
+
+<!-- SPONSORS AND GOOGLE MAP -->
+  <section class="footer_banner" id="contact">
+    <h2 class="hidden">Footer Banner Section </h2>
+    <p class="hero_header">FOR THE LATEST NEWS &amp; UPDATES</p>
+    <div class="button">subscribe</div>
+  </section>
+    
+<!-- COPYRIGHT SECTION -->
+  <div class="copyright">&copy;2020 - <strong>Von Braun Astronomical Society</strong></div>
+</div>
+    
+<!-- Main Container Ends -->
 </body>
 </html>
