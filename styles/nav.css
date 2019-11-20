@@ -1,0 +1,128 @@
+@charset "utf-8";
+/* CSS Document */
+
+!* {
+	outline: 2px solid red;
+}
+
+nav ul {
+	float: right;
+    list-style-type: none;
+}
+#navbar {
+    text-align: center;
+    float: right;
+    overflow: hidden;
+    background-color: #381223;
+    font-family: 'Roboto', serif;
+    z-index: 9;
+    width: 100%;
+    margin-bottom: 1.5em;
+}
+
+#navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+/* Nav Dropdown Links */
+#dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+#dropdown #dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #381223;
+}
+
+nav ul li {
+	float: left;
+	list-style: none;
+	position: relative;
+}
+#navbar a:hover, #dropdown:hover #dropbtn {
+    background-color: #5F1536;
+}
+
+#dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #381223;
+	color: white;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	letter-spacing: 2px;
+	font-weight: bold;
+}
+
+nav ul li a {
+	display: block;
+	text-decoration: none;
+	color: white;
+	padding: 14px 16px;
+    text-align: center;
+}
+
+nav ul li a:hover {
+	background-color: #5F1536;
+	color: gray;
+}
+
+	
+nav ul li ul {
+	display: none;
+	position: absolute;
+	background-color: black;
+	padding: 20px 20px;
+}
+
+nav ul li:hover ul {
+	display: block;
+	padding: 0px 0px;
+	z-index: 1;
+}
+
+nav ul li ul li {
+	text-align: center;
+}
+#dropdown-content a {
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+#dropdown-content a:hover {
+    background-color: #5F1536;
+}
+
+#dropdown:hover #dropdown-content {
+    display: block;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
