@@ -2,36 +2,103 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>About VBAS</title>
-<link href="styles/nav.css" rel="stylesheet" type="text/css">
+<title>Von Braun Astronomical Society About</title>
 <link href="styles/main.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Cinzel|Roboto|Staatliches%26display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body class="is-preload">      
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 	
-	<nav>
-			<ul>
-				<li><a href="index.html" class="navbutton">Home</a></li>
-				<li><a href="about.html" class="navbutton">About</a>
-					<ul>
-						<li><a href="history.html" class="navbutton">History</a></li>
-					</ul>
-				</li>
-				<li><a href="people.html" class="navbutton">People</a></li>
-				<li><a href="facilities.html" class="navbutton">Facilities</a>
-					<ul>
-						<li><a href="library.html" class="navbutton">Library</a></li>
-						<li><a href="observatories.html" class="navbutton">Observatories</a></li>
-						<li><a href="planetarium.html" class="navbutton">Planetarium</a></li>
-					</ul>
-				</li>
-				<li><a href="events.html" class="navbutton">Events</a></li>
-				<li><a href="resources.html" class="navbutton">Resources</a></li>
-				<li><a href="contact.html" class="navbutton">Contact</a></li>
-				<li><a href="members.html" class="navbutton">Members</a></li>
+			<!-- Header -->
+			<header id="header">
+				<a class="logo" href="index2.html"><img id="logo"  src="images/vbas_logo_small.png" alt="logo"></a>
+				<nav>
+					<a href="#menu">Menu</a>
+				</nav>
+			</header>
+
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="#home">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="facilities.html">Facilities</a></li>
+                    <li><a href="members.html">Member Resources</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="resources.html">Information</a></li>
+                    <li><a href="contact.html">Contact</a></li>
 				</ul>
-		</nav>
-	<h1><em>The</em> Von Braun Astronomical Society</h1>
+			</nav>
+
+        <!-- Our Nav Bar 
+        <div id="navbar">
+  <a href="#home">HOME</a>
+    
+    <div id="dropdown">
+    <button id="dropbtn">ABOUT
+      <i id="fa fa-caret-down"></i>
+    </button>
+    <div id="dropdown-content">
+      <a href="history.html">HISTORY</a>
+      <a href="people.html">BOARD</a>
+    </div>
+  </div> 
+    
+  <div id="dropdown">
+    <button id="dropbtn">FACILITIES
+      <i id="fa fa-caret-down"></i>
+    </button>
+    <div id="dropdown-content">
+      <a href="library.html">LIBRARY</a>
+      <a href="observatories.html">OBSERVATORY</a>
+      <a href="planetarium.html">PLANETARIUM</a>
+    </div>
+  </div> 
+    
+   <div id="dropdown">
+    <button id="dropbtn">MEMBER RESOURCES
+      <i id="fa fa-caret-down"></i>
+    </button>
+    <div id="dropdown-content">
+      <a href="resources.html">LINKS</a>
+      <a href="bylaws.html">BYLAWS</a>
+      <a href="ftp.html">FTP</a>
+      <a href="ephemeris.html">NERD</a>
+    </div>
+  </div>     
+
+ <a href="events.html">EVENTS</a>
+    
+    <div id="dropdown">
+    <button id="dropbtn">INFORMATION
+      <i id="fa fa-caret-down"></i>
+    </button>
+    <div id="dropdown-content">
+      <a href="resources.html">LINKS</a>
+      <a href="ephemeris.html">NERD INFO</a>
+      <a href="archives.html">ARCHIVES</a>
+    </div>
+  </div>   
+    
+  <div id="dropdown">
+    <button id="dropbtn">CONTACT
+      <i id="fa fa-caret-down"></i>
+    </button>
+    <div id="dropdown-content">
+      <a href="shop.html">SHOP</a>
+    </div>
+  </div>
+    
+</div> -->       
+        
+		<!-- Banner -->
+			<section id="banner">
+				<div class="inner">
+					<h1 id=mainheader><em>The</em> Von Braun Astronomical Society</h1>
+				</div>
+			</section>
+	
 	<div id="intro" style="background-color:">
         <img src="#" alt="VBAS logo" style="float:left; padding-right:20px; height:100px;">
         <blockquote style="height:100px;padding-top:45px;">VBAS is an educational and scientific non-profit volunteer organization of amateur and professional astronomers.</blockquote>
@@ -89,5 +156,33 @@
 					</div>
 				</div>
 			</footer>
+	
+				<!-- Scripts -->
+			<script src="js/jquery.min.js"></script>
+			<script src="js/browser.min.js"></script>
+			<script src="js/breakpoints.min.js"></script>
+			<script src="js/util.js"></script>
+			<script src="js/main.js"></script>
+<script>    
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script> 
 </body>
 </html>

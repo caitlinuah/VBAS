@@ -1,16 +1,12 @@
 @charset "utf-8";
 /* CSS Document */
 
-.navbar {
-!* {
-	outline: 2px solid red;
-}
 
 nav ul {
 	float: right;
     list-style-type: none;
 }
-#navbar {
+.navbar {
     text-align: center;
     float: right;
     overflow: hidden;
@@ -50,16 +46,12 @@ nav ul {
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn {
-=======
-nav ul li {
+	nav ul li {
 	float: left;
 	list-style: none;
 	position: relative;
 }
-#navbar a:hover, #dropdown:hover #dropbtn {
-    background-color: #5F1536;
-}
-
+	
 .dropdown-content {
     display: none;
     position: absolute;

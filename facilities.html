@@ -6,55 +6,69 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Von Braun Astronomical Society Facilities</title>
 <link href="styles/main.css" rel="stylesheet" type="text/css">
-<link href="styles/nav.css" rel="stylesheet" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Cinzel|Roboto|Staatliches&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Cinzel|Roboto|Staatliches%26display=swap" rel="stylesheet">
 	<style>
-		.content {
-			color: white;
+		.learnmore a {
+			text-decoration: none;
+			color: lightgray;
 		}
 	</style>
 </head>
-<body>
 	
-<!-- Main Container -->
-<div class="container"> 
+<body class="is-preload">      
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
     
-<!-- Logo and Name-->
-<header>
-<h1>Facilities</h1>    
-</header>     
-    
-<!-- Nav Bar -->  
-<div class="navbar">
+		<!-- Header -->
+			<header id="header">
+				<a class="logo" href="index2.html"><img id="logo"  src="images/vbas_logo_small.png" alt="logo"></a>
+				<nav>
+					<a href="#menu">Menu</a>
+				</nav>
+			</header>
+
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="#home">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="facilities.html">Facilities</a></li>
+                    <li><a href="members.html">Member Resources</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="resources.html">Information</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+
+        <!-- Our Nav Bar 
+        <div id="navbar">
   <a href="#home">HOME</a>
     
-    <div class="dropdown">
-    <button class="dropbtn">ABOUT
-      <i class="fa fa-caret-down"></i>
+    <div id="dropdown">
+    <button id="dropbtn">ABOUT
+      <i id="fa fa-caret-down"></i>
     </button>
-    <div class="dropdown-content">
+    <div id="dropdown-content">
       <a href="history.html">HISTORY</a>
       <a href="people.html">BOARD</a>
     </div>
   </div> 
     
-  <div class="dropdown">
-    <button class="dropbtn">FACILITIES
-      <i class="fa fa-caret-down"></i>
+  <div id="dropdown">
+    <button id="dropbtn">FACILITIES
+      <i id="fa fa-caret-down"></i>
     </button>
-    <div class="dropdown-content">
+    <div id="dropdown-content">
       <a href="library.html">LIBRARY</a>
       <a href="observatories.html">OBSERVATORY</a>
       <a href="planetarium.html">PLANETARIUM</a>
     </div>
   </div> 
     
-   <div class="dropdown">
-    <button class="dropbtn">MEMBER RESOURCES
-      <i class="fa fa-caret-down"></i>
+   <div id="dropdown">
+    <button id="dropbtn">MEMBER RESOURCES
+      <i id="fa fa-caret-down"></i>
     </button>
-    <div class="dropdown-content">
+    <div id="dropdown-content">
       <a href="resources.html">LINKS</a>
       <a href="bylaws.html">BYLAWS</a>
       <a href="ftp.html">FTP</a>
@@ -64,36 +78,50 @@
 
  <a href="events.html">EVENTS</a>
     
-    <div class="dropdown">
-    <button class="dropbtn">INFORMATION
-      <i class="fa fa-caret-down"></i>
+    <div id="dropdown">
+    <button id="dropbtn">INFORMATION
+      <i id="fa fa-caret-down"></i>
     </button>
-    <div class="dropdown-content">
+    <div id="dropdown-content">
       <a href="resources.html">LINKS</a>
       <a href="ephemeris.html">NERD INFO</a>
       <a href="archives.html">ARCHIVES</a>
     </div>
   </div>   
     
-  <div class="dropdown">
-    <button class="dropbtn">CONTACT
-      <i class="fa fa-caret-down"></i>
+  <div id="dropdown">
+    <button id="dropbtn">CONTACT
+      <i id="fa fa-caret-down"></i>
     </button>
-    <div class="dropdown-content">
+    <div id="dropdown-content">
       <a href="shop.html">SHOP</a>
     </div>
   </div>
     
-</div>        
+</div> -->       
+        
+		<!-- Banner -->
+			<section id="banner">
+				<div class="inner">
+					<h1 id=mainheader>Facilities</h1>
+				</div>
+			</section>       
 
 <!-- CONTENT -->
 	<section class="content">
-	<h2>Ann Sanford Memorial Library</h2>
-		<p>The Von Braun Astronomical Society’s library contains one of the largest collections of astronomy related publications in the Southeast! It is located on the first floor of the Wilhelm Angele Observatory and is accessible by members of VBAS to expand their knowledge and inspire new explorations.</p>
-	<h2>Observatories</h2>
-		<p>The Von Braun Astronomical Society hosts two permanent observatory facilities on its campus within Monte Sano State Park: the Conrad Swanson Observatory and the Wilhelm Angele Observatory. VBAS also maintains portable telescopes for field use.</p>
-	<h2>Planetarium</h2>
-		<p>The Wernher Von Braun Planetarium is a very useful tool for teaching astronomy and for revealing the wonders of the sky to the public. It is a natural companion to our observatories. During its construction in 1963, the planetarium was furnished by volunteer VBAS members. Its GOTO Model S-2 projector was donated by Mr. Frank Wyle on behalf of Wyle Laboratories on May 25 of the same year.</p>
+		
+		<h2>Ann Sanford Memorial Library</h2>
+			<p>The Von Braun Astronomical Society’s library contains one of the largest collections of astronomy related publications in the Southeast! It is located on the first floor of the Wilhelm Angele Observatory and is accessible by members of VBAS to expand their knowledge and inspire new explorations.</p>
+		<button class="learnmore"><a href="library.html">Learn More</a></button>
+		
+		<h2>Observatories</h2>
+			<p>The Von Braun Astronomical Society hosts two permanent observatory facilities on its campus within Monte Sano State Park: the Conrad Swanson Observatory and the Wilhelm Angele Observatory. VBAS also maintains portable telescopes for field use.</p>
+		<button class="learnmore"><a href="observatories.html">Learn More</a></button>
+		
+		<h2>Planetarium</h2>
+			<p>The Wernher Von Braun Planetarium is a very useful tool for teaching astronomy and for revealing the wonders of the sky to the public. It is a natural companion to our observatories. During its construction in 1963, the planetarium was furnished by volunteer VBAS members. Its GOTO Model S-2 projector was donated by Mr. Frank Wyle on behalf of Wyle Laboratories on May 25 of the same year.</p>
+		<button class="learnmore"><a href="planetarium.html">Learn More</a></button>
+		
 	</section>
 	
 	<!-- Footer -->
@@ -129,5 +157,33 @@
 					</div>
 				</div>
 			</footer>
+	
+			<!-- Scripts -->
+			<script src="js/jquery.min.js"></script>
+			<script src="js/browser.min.js"></script>
+			<script src="js/breakpoints.min.js"></script>
+			<script src="js/util.js"></script>
+			<script src="js/main.js"></script>
+<script>    
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script> 
 </body>
 </html>
