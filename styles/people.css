@@ -1,21 +1,49 @@
+<<<<<<< Updated upstream
 h2 {
     color: white;
+}
+
+h3 {
+=======
+.people h1 {
+    color: white;
+    background-color: black;
+}
+
+.people h2 {
+>>>>>>> Stashed changes
+    color: white;
+    background-color: black;
+    font-family: 'Cinzel', serif;
+    font-size: 30px;
 }
 
 h3 {
     color: white;
 }
 
-body {
-    background: darkslateblue;
-}
 .card {
   background: white;
+  display: inline-block;
+  max-height: 1000px;
+  height: 690px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
-  margin: auto;
+  width: 340px;
+  margin: 10px;
+  margin-top: 10px;
   text-align: center;
+<<<<<<< Updated upstream
   font-family: arial;    
+=======
+  vertical-align: middle;
+  font-family: arial;
+  
+}
+
+.card h1{
+    padding-top: 5px;
+    
+>>>>>>> Stashed changes
 }
 
 .title {
@@ -24,10 +52,17 @@ body {
 }
 
 .contact {
+<<<<<<< Updated upstream
   border: none;
   outline: 0;
   display: inline-block;
   color: black;
+=======
+  color: black;
+  height: 100px;
+  width: 350px;
+  margin: auto;
+>>>>>>> Stashed changes
   background-color: #000;
   text-align: center;
   cursor: pointer;
@@ -37,6 +72,7 @@ body {
 
 .contact p {
     color: white;
+<<<<<<< Updated upstream
 }
 
 .card a {
@@ -44,3 +80,51 @@ body {
   color: white;
   bottom: 10px;
 }
+=======
+}
+
+.card a {
+  text-decoration: none;
+  color: white;
+  bottom: 10px;
+}
+
+.card img {
+    width: 90%;
+    padding-top: 1em;
+}
+
+/* unvisited link */
+.contact a:link {
+  color: aliceblue;
+}
+
+/* visited link */
+.contact a:visited {
+  color: plum;
+}
+
+/* mouse over link */
+.contact a:hover {
+  color: mediumblue;
+}
+
+/* selected link */
+.contact a:active {
+  color: gray;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("img_parallax.jpg");
+
+  /* Set a specific height */
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+>>>>>>> Stashed changes
