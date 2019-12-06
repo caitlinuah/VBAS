@@ -7,6 +7,56 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="styles/index.css" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Cinzel|Roboto|Staatliches%26display=swap" rel="stylesheet">
+<style>
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: rgba(206, 27, 40, 0.25);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: rgba(206, 27, 40, 0.5);
+}
+
+.container {
+  max-width:74%;
+  border-radius: 5px;
+  background-color: transparent;
+  padding: 20px;
+    float:right;
+}    
+    #address {
+        max-width:24%;
+        float:left;
+        padding-left:10px;
+        padding-top: 8em;}
+    ol{
+        padding-left:20px;}
+    #visit {
+        float:right;
+        max-width:75%;}
+    .clearfix::after {
+  content: "";
+  clear: both;
+  display: table;}
+    #route {display:block;
+        margin-left:3em;
+    margin-bottom:20px;}
+</style>
 </head>
 
 <body class="is-preload">     
@@ -83,59 +133,98 @@
 					<h1 id=mainheader>Contact</h1>
 				</div>
 			</section>
-	
-        
-      <h2>Our Mailing Address:</h2>
-	<p>Von Braun Astronomical Society 
-      <br>
-      P.O. Box 1142 
-      <br>
-      Huntsville, AL  35807 
-      <br>
+<div class="clearfix">	
+   <div id="address">     
+      <h2>Our Addresses:</h2>
+	<p>Our Mailing Address:<br>Von Braun Astronomical Society<br>P.O. Box 1142 <br>Huntsville, AL  35807 <br>
     Telephone: 256-539-0316</p>
+       <p>Our Street Address:
+      <br>Monte Sano State Park<br>5105 Nolen Ave. SE <br>Huntsville, AL 35801</p>
       
 <p>If you need help on the way your way to one of our shows you can call us at 256-539-0316.
-    If you have any questions you may email us below. </p>     
+    If you have any questions you may email us below. </p> 
+    </div>
+<!---Contact form--->
+    <h2>Contact VBAS</h2>
+
+<div class="container">
+  <form action="/action_page.php" target="_self">
+    <label for="fname">First Name</label>
+    <input type="text" id="name" name="firstname" placeholder="Your name..">
+    <label for="email">Email Address</label>
+      <input type="text" id="email" name="email" placeholder="Your email address">
+
+    <label for="subject">Subject</label>
+    <select id="subject" name="subject">
+      <option value="select">Select</option>
+        <option value="general">General Inquiry</option>
+        <option value="membership">Membership</option>
+      <option value="emaillist">Email List</option>
+      <option value="newslettersubscribe">Subscribe</option>
+      <option value="newsletter">Newsletter</option>
+      <option value="planetarium">Planetarium</option>
+        <option value="nightatobservatory">Night at the Observatory</option>
+      <option value="telescopes">Telescopes</option>
+        <option value="usermanuals">User Manuals</option>
+    </select>
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit" $ToEmail = 'VonBraunAstronomy@gmail.com';>
+     <!--- <? php
+if($_POST["email"]<>''){
+    $ToEmail = 'VonBraunAstronomy@gmail.com'; 
+$EmailSubject = $_GET["subject"]; 
+$mailheader = "From: ".$_POST["email"]."\r\n"; 
+$mailheader .= "Reply-To: ".$_POST["email"]."\r\n"; 
+$mailheader .= "Content-type: text/html; charset=iso-8859-1\r\n"; 
+$MESSAGE_BODY = "Name: ".$_POST["name"].""; 
+$MESSAGE_BODY .= "Email: ".$_POST["message"].""; 
+$MESSAGE_BODY .= "Comment: ".nl2br($_POST["comment"]).""; 
+mail($ToEmail, $EmailSubject, $MESSAGE_BODY, $mailheader) or die ("Failure");
+?> --->
+  </form>
+</div>
+    <!---End of contact form--->
+    </div>
       
-      <h2>How To Find Our Facilities In Monte Sano State Park</h2>
-Our "street address" is:
-      <br>
-Monte Sano State Park
-      <br>
-      5105 Nolen Ave. SE 
-      <br>
-      Huntsville, AL 35801
+     <h2>How To Find Our Facilities In Monte Sano State Park</h2>
+    
 
       <p>Our facilities are located on a mountain just East of Huntsville in Monte Sano State Park. At the park's entrance, a fee is normally charged unless you tell them that you are going to a VBAS event!  Once in the park, follow the road to the left at the first intersection until you reach VBAS' entrance on the left just before the overlook in the park.</p>
       
-      <h2>Your First Visit</h2>
-      <p>It takes about 15 minutes from Huntsville Hospital and you should plan your first visit to arrive while it is still daylight.  Additionally, you should arrive at least 30 minutes before our planetarium programs, which fill up fast!</p>
- 
-      <h3>Easiest Route</h3>
-
-      <ol><li>From Huntsville Hospital, turn left on Governors (Highway 431)</li>
-          <li>Stay on Governors for 2.9 miles</li>
-          <li>Turn left on to Monte Sano Bld. SE</li>
-          <li>Stay on Monte Sano Bld. for 2.4 miles</li>
-          <li>Turn right on Nolen Ave. SE</li>
-          <li>Stay on Nolen Ave. for 1.1 miles</li>
-          <li>Slight left on Bankhead Pkwy. NE</li>
-          <li>Stay on Bankhead Pkwy. for 0.2 Miles</li>
-          <li>Planetarium is on the left</li>
-          </ol>
-      <br>
-<p>Remember NOT to pay the entrance fee since you are going to VBAS' facilities!
-    Follow the park's main road to the left at the first intersection and watch for our entrance on the left.</p>
-
-
-    <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6859.133595065252!2d-86.51807256582299!3d34.74353319039971!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8862143c56506e63%3A0x8df2cbf6321abe7f!2sWernher%20von%20Braun%20Planetarium!5e0!3m2!1sen!2sus!4v1571076206347!5m2!1sen!2sus" 
+     <iframe 
+     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6859.133595065252!2d-86.51807256582299!3d34.74353319039971!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8862143c56506e63%3A0x8df2cbf6321abe7f!2sWernher%20von%20Braun%20Planetarium!5e0!3m2!1sen!2sus!4v1571076206347!5m2!1sen!2sus" 
             width="600" 
             height="450" 
             frameborder="0" 
             style="border:0;" allowfullscreen>
     </iframe>
+<div id="visit">
+      <h2>Your First Visit</h2>
+      <p>It takes about 15 minutes from Huntsville Hospital and you should plan your first visit to arrive while it is still daylight.  Additionally, you should arrive at least 30 minutes before our planetarium programs, which fill up fast!</p>
+    </div>
+ 
+     <div id="route"><h3>Easiest Route:</h3>
 
+      <ol>
+          <li>From Huntsville Hospital, turn left on Governors (Highway 431)</li><br>
+          <li>Stay on Governors for 2.9 miles</li><br>
+          <li>Turn left on to Monte Sano Bld. SE</li><br>
+          <li>Stay on Monte Sano Bld. for 2.4 miles</li><br>
+          <li>Turn right on Nolen Ave. SE</li><br>
+          <li>Stay on Nolen Ave. for 1.1 miles</li><br>
+          <li>Slight left on Bankhead Pkwy. NE</li><br>
+          <li>Stay on Bankhead Pkwy. for 0.2 Miles</li><br>
+          <li>Planetarium is on the left</li>
+          </ol>
+    </div><br>
+<p>Remember NOT to pay the entrance fee since you are going to VBAS' facilities!
+    Follow the park's main road to the left at the first intersection and watch for our entrance on the left.</p>
+
+
+   
    
 
 <!-- Footer -->
