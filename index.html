@@ -1,126 +1,84 @@
 <!DOCTYPE HTML>
 <html>
-<head>
-	<title>Von Braun Astronomical Society</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<meta name="description" content="" />
-	<meta name="keywords" content="" />
-	<link rel="stylesheet" href="styles/main.css" />
-    <link href="https://fonts.googleapis.com/css?family=Cinzel|Staatliches%26display=swap" rel="stylesheet">
-	<style>
-		.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  padding: 12px 16px;
-  z-index: 1;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-	</style>
-</head>
-<body class="is-preload">      
-	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> 
+	<head>
+		<title>Von Braun Astronomical Society</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link rel="stylesheet" href="styles/index.css" />
+        <link href="https://fonts.googleapis.com/css?family=Cinzel|Staatliches&display=swap" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+<body class="is-preload">     
+    
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> 
         
-		<!-- Header -->
-			<header id="header">
-				<a class="logo" href="index2.html"><img id="logo"  src="images/vbas_logo_small.png" alt="logo"></a>
-				<nav>
-					<a href="#menu">Menu</a>
-				</nav>
-			</header>
+<!-- Header -->
+<header id="header">
 
-		<!-- Nav -->
-			<nav id="menu">
-				<ul class="links">
-					<li><a href="#home">Home</a></li>
-					<li class="dropdown"><a href="about.html">About</a>
-						<ul class="dropdown-content">
-							<li><a href="history.html">History</a></li>
-							<li><a href="people.html">Board</a></li>
-						</ul>
-					</li>
-					<li><a href="facilities.html">Facilities</a></li>
-                    <li><a href="members.html">Member Resources</a></li>
-                    <li><a href="events.html">Events</a></li>
-                    <li><a href="resources.html">Information</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-				</ul>
-			</nav>
-	
+<!-- Logo-->   
+<a style="padding: 1px;" href="index.html" class="dropbtn"><img style=width:55px src="images/vbas_logo_small.png" alt="logo"></a>    
 
-        <!-- Our Nav Bar 
-        <div id="navbar">
-  <a href="#home">HOME</a>
+<!-- Navigation -->    
+<ul>    
     
-    <div id="dropdown">
-    <button id="dropbtn">ABOUT
-      <i id="fa fa-caret-down"></i>
-    </button>
-    <div id="dropdown-content">
-      <a href="history.html">HISTORY</a>
-      <a href="people.html">BOARD</a>
+<li>
+    <a href="index.html">Home</a>
+</li>
+    
+<li class="dropdown">
+    <a href="about.html" class="dropbtn">About</a>
+    <div class="dropdown-content">
+      <a href="history.html">History</a>
+      <a href="people.html">Board</a>
     </div>
-  </div> 
+</li>
     
-  <div id="dropdown">
-    <button id="dropbtn">FACILITIES
-      <i id="fa fa-caret-down"></i>
-    </button>
-    <div id="dropdown-content">
-      <a href="library.html">LIBRARY</a>
-      <a href="observatories.html">OBSERVATORY</a>
-      <a href="planetarium.html">PLANETARIUM</a>
+<li class="dropdown">
+    <a href="facilities.html" class="dropbtn">Facilities</a>
+    <div class="dropdown-content">
+      <a href="library.html">Library</a>
+      <a href="observatories.html">Observatory</a>
+      <a href="planetarium.html">PLanetarium</a>
     </div>
-  </div> 
+</li>
     
-   <div id="dropdown">
-    <button id="dropbtn">MEMBER RESOURCES
-      <i id="fa fa-caret-down"></i>
-    </button>
-    <div id="dropdown-content">
-      <a href="resources.html">LINKS</a>
-      <a href="bylaws.html">BYLAWS</a>
+<li class="dropdown">
+    <a href="members.html" class="dropbtn">Member Resources</a>
+    <div class="dropdown-content">
+      <a href="resources.html">Links</a>
+      <a href="bylaws.html">Bylaws</a>
       <a href="ftp.html">FTP</a>
-      <a href="ephemeris.html">NERD</a>
+      <a href="ephemeris.html">Ephemeris</a>
     </div>
-  </div>     
-
- <a href="events.html">EVENTS</a>
+</li>
     
-    <div id="dropdown">
-    <button id="dropbtn">INFORMATION
-      <i id="fa fa-caret-down"></i>
-    </button>
-    <div id="dropdown-content">
-      <a href="resources.html">LINKS</a>
-      <a href="ephemeris.html">NERD INFO</a>
-      <a href="archives.html">ARCHIVES</a>
+<li>
+    <a href="events.html">Events</a>
+</li>
+    
+<li class="dropdown">
+    <a href="public.html" class="dropbtn">Information</a>
+    <div class="dropdown-content">
+      <a href="resources.html">Links</a>
+      <a href="ephemeris.html">Ephemeris</a>
+      <a href="archives.html">Archives</a>
     </div>
-  </div>   
+</li>
     
-  <div id="dropdown">
-    <button id="dropbtn">CONTACT
-      <i id="fa fa-caret-down"></i>
-    </button>
-    <div id="dropdown-content">
-      <a href="shop.html">SHOP</a>
-    </div>
-  </div>
+<li class="dropdown">
+    <a href="contact.html" class="dropbtn">Contact</a>
+</li>    
     
-</div> -->       
+<li>
+<a href="https://mkt.com/von-braun-astronomical-society/" target="_blank">Shop</a>
+</li>
+    
+</ul>
+</header>
         
-		<!-- Banner -->
+<!-- Banner -->
 			<section id="banner">
 				<div class="inner">
 					<h1 id=mainheader>Von Braun Astronomical Society</h1>
@@ -129,7 +87,7 @@
 			</section>
 
 
-		<!-- Highlights -->
+<!-- Highlights -->
 			<section class="wrapper">
 				<div class="inner">
 					<header class="special">
@@ -195,7 +153,7 @@
 				</div>
 			</section>
 
-		<!-- CTA -->
+<!-- CTA -->
 			<section id="cta" class="wrapper">
 				<div class="inner">
 					<p id="quote">“Astronomy has always occupied a place of distinction among the intellectual pursuits of man. Not only is it the oldest and purest of all sciences; it is also that science which is able, more than any other science, to give its followers a realistic feeling for man’s place in the universe.”</p>
@@ -203,7 +161,7 @@
 				</div>
 			</section>
 
-		<!-- Testimonials -->
+<!-- Testimonials -->
 			<section class="wrapper">
 				<div class="inner">
 					<header class="special">
@@ -254,13 +212,13 @@
 				</div>
 			</section>
 
-		<!-- Footer -->
+<!-- Footer -->
 			<footer id="footer">
 				<div class="inner">
 					<div class="content">
 						<section>
 							<h4>Planetarium</h4>
-							<p>5105 Nolen Ave SE <br>Huntsville, AL 35801</p> 
+							<h5>5105 Nolen Ave SE <br>Huntsville, AL 35801</h5> 
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6859.133595065252!2d-86.51807256582299!3d34.74353319039971!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8862143c56506e63%3A0x8df2cbf6321abe7f!2sWernher%20von%20Braun%20Planetarium!5e0!3m2!1sen!2sus!4v1571076206347!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe><br>
 						</section>
 						<section>
@@ -277,18 +235,19 @@
 						<section>
 							<h4>Follow Us on Social Media</h4>
 							<ul class="plain">
-								<li><a href="https://twitter.com/vbas_huntsville?lang=en"><i class="icon fa-twitter">&nbsp;</i>Twitter</a></li>
-								<li><a href="https://www.facebook.com/groups/112004006960/"><i class="icon fa-facebook">&nbsp;</i>Facebook</a></li>
+								<li><a href="https://twitter.com/vbas_huntsville?lang=en" target="_blank"><i class="icon fa-twitter">&nbsp;</i>Twitter</a></li>
+								<li><a href="https://www.facebook.com/groups/112004006960/" target="_blank"><i class="icon fa-facebook">&nbsp;</i>Facebook</a></li>
 							</ul>
 						</section>
 					</div>
+                    <br>
 					<div class="copyright"> 2020
 						&copy; Von Braun Astronomical Society
 					</div>
 				</div>
 			</footer>
 
-		<!-- Scripts -->
+<!-- Scripts -->
 			<script src="js/jquery.min.js"></script>
 			<script src="js/browser.min.js"></script>
 			<script src="js/breakpoints.min.js"></script>
@@ -314,6 +273,15 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+    
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}    
 </script>        
 	</body>
 </html>
