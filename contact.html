@@ -144,12 +144,13 @@ input[type=submit]:hover {
 <p>If you need help on the way your way to one of our shows you can call us at 256-539-0316.
     If you have any questions you may email us below. </p> 
     </div>
-<!---Contact form--->
+
+    <!---Contact form--->
     <h2>Contact VBAS</h2>
 
 <div class="container">
-  <form action="/action_page.php" target="_self">
-    <label for="fname">First Name</label>
+  <form action="send.php" method="POST">
+    <label for="name">Name</label>
     <input type="text" id="name" name="firstname" placeholder="Your name..">
     <label for="email">Email Address</label>
       <input type="text" id="email" name="email" placeholder="Your email address">
