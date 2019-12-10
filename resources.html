@@ -2,55 +2,110 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Resources</title>
+<title>Von Braun Astronomical Society Resources</title>
+<link href="styles/resources.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Cinzel|Roboto|Staatliches%26display=swap" rel="stylesheet">
 <style>
-    li {display:inline; width:auto;}
+    #categories li {display:inline; width:auto;}
     #categories {float:none;}
     img {width:150px; display:block; margin-left:auto; margin-right:auto;}
     figure {height:250px; float:left; width:25%;}
     figcaption {color:white; align-content: center;}
-    body {background-color:lightgray;}
 </style>
 </head>
 
-<body>
-  <!-- Nav Bar -->  
-<div class="navbar">
+<body class="is-preload">      
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+	
+			<!-- Header -->
+			<header id="header">
+				<a class="logo" href="index2.html"><img id="logo"  src="images/vbas_logo_small.png" alt="logo"></a>
+				<nav>
+					<a href="#menu">Menu</a>
+				</nav>
+			</header>
+
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="#home">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="facilities.html">Facilities</a></li>
+                    <li><a href="members.html">Member Resources</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="resources.html">Information</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+
+        <!-- Our Nav Bar 
+        <div id="navbar">
   <a href="#home">HOME</a>
     
-    <div class="dropdown">
-    <button class="dropbtn">ABOUT
-      <i class="fa fa-caret-down"></i>
+    <div id="dropdown">
+    <button id="dropbtn">ABOUT
+      <i id="fa fa-caret-down"></i>
     </button>
-    <div class="dropdown-content">
+    <div id="dropdown-content">
       <a href="history.html">HISTORY</a>
       <a href="people.html">BOARD</a>
     </div>
   </div> 
     
-  <div class="dropdown">
-    <button class="dropbtn">FACILITIES
-      <i class="fa fa-caret-down"></i>
+  <div id="dropdown">
+    <button id="dropbtn">FACILITIES
+      <i id="fa fa-caret-down"></i>
     </button>
-    <div class="dropdown-content">
+    <div id="dropdown-content">
       <a href="library.html">LIBRARY</a>
       <a href="observatories.html">OBSERVATORY</a>
       <a href="planetarium.html">PLANETARIUM</a>
     </div>
   </div> 
     
-   <div class="dropdown">
-    <button class="dropbtn">MEMBER RESOURCES
-      <i class="fa fa-caret-down"></i>
+   <div id="dropdown">
+    <button id="dropbtn">MEMBER RESOURCES
+      <i id="fa fa-caret-down"></i>
     </button>
-    <div class="dropdown-content">
+    <div id="dropdown-content">
       <a href="resources.html">LINKS</a>
       <a href="bylaws.html">BYLAWS</a>
       <a href="ftp.html">FTP</a>
       <a href="ephemeris.html">NERD</a>
     </div>
-  </div>       
-	<h1>Resource Links</h1>
+  </div>     
+
+ <a href="events.html">EVENTS</a>
+    
+    <div id="dropdown">
+    <button id="dropbtn">INFORMATION
+      <i id="fa fa-caret-down"></i>
+    </button>
+    <div id="dropdown-content">
+      <a href="resources.html">LINKS</a>
+      <a href="ephemeris.html">NERD INFO</a>
+      <a href="archives.html">ARCHIVES</a>
+    </div>
+  </div>   
+    
+  <div id="dropdown">
+    <button id="dropbtn">CONTACT
+      <i id="fa fa-caret-down"></i>
+    </button>
+    <div id="dropdown-content">
+      <a href="shop.html">SHOP</a>
+    </div>
+  </div>
+    
+</div> -->       
+        
+		<!-- Banner -->
+			<section id="banner">
+				<div class="inner">
+					<h1 id=mainheader>Resource Links</h1>
+				</div>
+			</section>     
+	
     <p>This page contains links to resources for the various aspects of astronomy. Click on one of the categories below to browse the resources and get inspired to explore.</p>
     <main>
     <ul id="categories">
@@ -569,5 +624,68 @@
             </figure></li>
         </ul><br>
     </section>
+	
+	<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<div class="content">
+						<section>
+							<h4>Planetarium</h4>
+							<p>5105 Nolen Ave SE <br>Huntsville, AL 35801</p> 
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6859.133595065252!2d-86.51807256582299!3d34.74353319039971!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8862143c56506e63%3A0x8df2cbf6321abe7f!2sWernher%20von%20Braun%20Planetarium!5e0!3m2!1sen!2sus!4v1571076206347!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe><br>
+						</section>
+						<section>
+							<h4>Special Thanks to Our Sponsors</h4>
+							<ul class="alt">
+								<li><a href="https://www.gigaparts.com">
+                                <img id=spons src="images/GigaParts_logo.png" alt="GigaParts">
+                                </a></li>
+								<li><a href="https://www.lockheedmartin.com/en-us/index.html">
+                                <img id=spons src="images/LM-logo.png" alt="Lockheed Martin">
+                                </a></li>
+							</ul>
+						</section>
+						<section>
+							<h4>Follow Us on Social Media</h4>
+							<ul class="plain">
+								<li><a href="https://twitter.com/vbas_huntsville?lang=en"><i class="icon fa-twitter">&nbsp;</i>Twitter</a></li>
+								<li><a href="https://www.facebook.com/groups/112004006960/"><i class="icon fa-facebook">&nbsp;</i>Facebook</a></li>
+							</ul>
+						</section>
+					</div>
+					<div class="copyright"> 2020
+						&copy; Von Braun Astronomical Society
+					</div>
+				</div>
+			</footer>
+	
+				<!-- Scripts -->
+			<script src="js/jquery.min.js"></script>
+			<script src="js/browser.min.js"></script>
+			<script src="js/breakpoints.min.js"></script>
+			<script src="js/util.js"></script>
+			<script src="js/main.js"></script>
+<script>    
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script> 
+	
 </body>
 </html>
