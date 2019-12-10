@@ -48,7 +48,9 @@ input[type=submit]:hover {
         padding-left:20px;}
     #visit {
         float:right;
-        max-width:75%;}
+        max-width:65%;
+        margin-bottom:4em;
+        margin-top:4em;}
     .clearfix::after {
   content: "";
   clear: both;
@@ -56,6 +58,17 @@ input[type=submit]:hover {
     #route {display:block;
         margin-left:3em;
     margin-bottom:20px;}
+    #map iframe {max-width:30%; max-height:250px; float:left;
+        padding-bottom:2em;}
+    #location {display:block; clear:both;}
+    
+    @media screen and (max-width: 960px) {
+        #address, #contact, #map, #location, #visit, #route {max-width:90%; margin-right:5%;} 
+        #contact {margin-left:0;}
+        #map iframe {width:200px; padding:10px; margin-right: 0; margin-left:40%;}
+        #route h3 {margin-top:590px;}
+        #route {padding-bottom:75px;}
+           }
 </style>
 </head>
 
@@ -133,6 +146,7 @@ input[type=submit]:hover {
 					<h1 id=mainheader>Contact</h1>
 				</div>
 			</section>
+    <!--end banner-->
 <div class="clearfix">	
    <div id="address">     
       <h2>Our Addresses:</h2>
@@ -146,6 +160,7 @@ input[type=submit]:hover {
     </div>
 
     <!---Contact form--->
+    <div id="contact">
     <h2>Contact VBAS</h2>
 
 <div class="container">
@@ -173,28 +188,23 @@ input[type=submit]:hover {
     <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
 
     <input type="submit" value="Submit" $ToEmail = 'VonBraunAstronomy@gmail.com';>
-     <!--- <? php
-if($_POST["email"]<>''){
-    $ToEmail = 'VonBraunAstronomy@gmail.com'; 
-$EmailSubject = $_GET["subject"]; 
-$mailheader = "From: ".$_POST["email"]."\r\n"; 
-$mailheader .= "Reply-To: ".$_POST["email"]."\r\n"; 
-$mailheader .= "Content-type: text/html; charset=iso-8859-1\r\n"; 
-$MESSAGE_BODY = "Name: ".$_POST["name"].""; 
-$MESSAGE_BODY .= "Email: ".$_POST["message"].""; 
-$MESSAGE_BODY .= "Comment: ".nl2br($_POST["comment"]).""; 
-mail($ToEmail, $EmailSubject, $MESSAGE_BODY, $mailheader) or die ("Failure");
-?> --->
   </form>
 </div>
+    </div>
     <!---End of contact form--->
     </div>
-      
+     <div id="location">
+         <div id="map">
      <h2>How To Find Our Facilities In Monte Sano State Park</h2>
     
 
       <p>Our facilities are located on a mountain just East of Huntsville in Monte Sano State Park. At the park's entrance, a fee is normally charged unless you tell them that you are going to a VBAS event!  Once in the park, follow the road to the left at the first intersection until you reach VBAS' entrance on the left just before the overlook in the park.</p>
       
+             <div id="visit">
+      <h2>Your First Visit</h2>
+      <p>It takes about 15 minutes from Huntsville Hospital and you should plan your first visit to arrive while it is still daylight.  Additionally, you should arrive at least 30 minutes before our planetarium programs, which fill up fast!</p>
+    </div>
+             
      <iframe 
      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6859.133595065252!2d-86.51807256582299!3d34.74353319039971!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8862143c56506e63%3A0x8df2cbf6321abe7f!2sWernher%20von%20Braun%20Planetarium!5e0!3m2!1sen!2sus!4v1571076206347!5m2!1sen!2sus" 
             width="600" 
@@ -202,23 +212,22 @@ mail($ToEmail, $EmailSubject, $MESSAGE_BODY, $mailheader) or die ("Failure");
             frameborder="0" 
             style="border:0;" allowfullscreen>
     </iframe>
-<div id="visit">
-      <h2>Your First Visit</h2>
-      <p>It takes about 15 minutes from Huntsville Hospital and you should plan your first visit to arrive while it is still daylight.  Additionally, you should arrive at least 30 minutes before our planetarium programs, which fill up fast!</p>
     </div>
+         
+</div>
  
-     <div id="route"><h3>Easiest Route:</h3>
-
+     <div id="route"><br>
+            <h3>Easiest Route:</h3>
       <ol>
-          <li>From Huntsville Hospital, turn left on Governors (Highway 431)</li><br>
-          <li>Stay on Governors for 2.9 miles</li><br>
-          <li>Turn left on to Monte Sano Bld. SE</li><br>
-          <li>Stay on Monte Sano Bld. for 2.4 miles</li><br>
-          <li>Turn right on Nolen Ave. SE</li><br>
-          <li>Stay on Nolen Ave. for 1.1 miles</li><br>
-          <li>Slight left on Bankhead Pkwy. NE</li><br>
-          <li>Stay on Bankhead Pkwy. for 0.2 Miles</li><br>
-          <li>Planetarium is on the left</li>
+          <li>1. From Huntsville Hospital, turn left on Governors (Highway 431)</li><br>
+          <li>2. Stay on Governors for 2.9 miles</li><br>
+          <li>3. Turn left on to Monte Sano Bld. SE</li><br>
+          <li>4. Stay on Monte Sano Bld. for 2.4 miles</li><br>
+          <li>5. Turn right on Nolen Ave. SE</li><br>
+          <li>6. Stay on Nolen Ave. for 1.1 miles</li><br>
+          <li>7. Slight left on Bankhead Pkwy. NE</li><br>
+          <li>8. Stay on Bankhead Pkwy. for 0.2 Miles</li><br>
+          <li>9. Planetarium is on the left</li>
           </ol>
     </div><br>
 <p>Remember NOT to pay the entrance fee since you are going to VBAS' facilities!
