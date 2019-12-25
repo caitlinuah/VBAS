@@ -2087,15 +2087,20 @@ float: right;}
 
 @media screen and (max-width: 980px) {
   body {
-    padding-top: 44px; }
+    padding-top: 96px; }
 
 #header {
     height: 44px;
-    line-height: 44px; } }
+    line-height: 44px; 
+    min-width:320px;
+    padding-top:70px;
+    padding-bottom:50px;} }
 
 @media screen and (max-width: 480px) {
   #header {
-    min-width: 320px; } }
+    min-width: 192px; 
+    padding-top:70px;
+    padding-bottom:80px;} }
 
 /* Heading */
 #heading {
